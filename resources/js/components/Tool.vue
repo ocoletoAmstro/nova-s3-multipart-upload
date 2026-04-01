@@ -83,7 +83,7 @@ export default {
                 .post(this.apiUri, data)
                 .then((response) =>
                     {
-                        Nova.success(response.data.message);
+                       // Nova.success(response.data.message);
 
                         Nova.$emit(`refresh-${this.withMeta.attribute}-files`);
 
