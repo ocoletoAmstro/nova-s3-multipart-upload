@@ -248,6 +248,17 @@ class NovaS3MultipartUpload extends ResourceTool
     }
 
     /**
+     * Show Nova success notification after each file is saved.
+     *
+     * @param  bool  $boolean
+     * @return $this
+     */
+    public function showUploadSuccess($boolean = true)
+    {
+        return $this->withMeta(['showUploadSuccess' => $boolean]);
+    }
+
+    /**
      * Set file information storage as array.
      *
      * @param  string  $fileKeyColumn
